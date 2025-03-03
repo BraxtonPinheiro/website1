@@ -29,7 +29,7 @@ body {
     cursor: pointer;
 }
 
-.input {
+.search .input {
     background-color: white;
     border: 0;
     font-size: 18px;
@@ -41,4 +41,9 @@ body {
 
 .search .input:focus {
     outline: none;
+}
+
+.search.active . input {
+    width: 200px;
+    
 }
