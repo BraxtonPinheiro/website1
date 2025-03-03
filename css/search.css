@@ -8,3 +8,16 @@ body {
     justify-content: center; /*center. left to right*/
     margin: 0;
 }
+
+.search {
+    height: 200 px;
+    width: 300 px;
+    background-color: blue;
+    position: relative;
+}
+
+.search .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
