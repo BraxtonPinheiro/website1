@@ -37,6 +37,7 @@ body {
     height: 50px;
     width: 50px;
     padding: 15px;
+    transition: width 3s ease;
 
 }
 
