@@ -50,6 +50,6 @@ body {
 
 }
 
-.searhc.active .btn {
+.search.active .btn {
     transform: translateX(198px)
 }
