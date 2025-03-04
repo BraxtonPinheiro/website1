@@ -14,14 +14,14 @@ body {
 
 
 .bg {
-    backgrouynd-image: url('images/carcode.avif');
+    background-image: url('/images/carcode.avif');
     background-size: cover;
-    background-position: ceter;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     position: absolute;
-    filter:blur(50px);
+    filter: blur(50px);
     z-index: -1;
 }
 
