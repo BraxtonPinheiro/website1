@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -6,9 +5,12 @@
 body {
     background-color: LightBlue;
     height: 100vh;
-    display: flex;  /*window fits on any screen size*/
-    align-items: center;  /*put search bar and button in center. up and down*/
-    justify-content: center; /*center. left to right*/
+    display: flex;
+    /*window fits on any screen size*/
+    align-items: center;
+    /*put search bar and button in center. up and down*/
+    justify-content: center;
+    /*center. left to right*/
     margin: 0;
 }
 
