@@ -33,7 +33,7 @@
 
  .btn.active {
     transform: translateX(49px);
-    background-color: Beige;
+    /*background-color: Beige;*/
  }
 
  .box.active{
