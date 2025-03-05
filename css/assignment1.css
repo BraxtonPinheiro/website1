@@ -28,7 +28,7 @@
     background-color: LightGrey ;
     cursor: pointer;
     border: 0px;
-    transition: transform .3s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
  .btn.active {
@@ -37,6 +37,7 @@
  }
 
  .box.active{
+    transition
     background-color: beige;
  }
 
