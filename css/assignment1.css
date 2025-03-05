@@ -28,11 +28,20 @@
     background-color: DimGrey;
     cursor: pointer;
     border: 0px;
+    transition: transform .3s ease-in-out;
 }
 
- .btn .active {
-    transform: translateX(198px);
+ .btn.active {
+    transform: translateX(49px);
+    background-color: Beige;
  }
 
+ .box.active{
+    background-color: beige;
+ }
 
+ body.active {
+    color: beige;
+    background-color: DimGrey;
+ }
 
