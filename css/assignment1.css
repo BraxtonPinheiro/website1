@@ -20,16 +20,17 @@
     background-color: LightSlateGray;
  }
 
-.button {
+.btn {
     width: 40px;
     height: 40px;
     margin-top: 5px;
     margin-left: 5px;
     background-color: DimGrey;
     cursor: pointer;
+    border: 0px;
 }
 
-.button.dark-mode {
+.btn.dark-mode {
     align-items: right;
 }
 
