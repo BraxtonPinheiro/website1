@@ -33,9 +33,11 @@
 
  .btn.active {
     transform: translateX(49px);
+    background-color: DimGrey;
  }
 
  .box.active{
+    transform
     background-color: beige;
  }
 
