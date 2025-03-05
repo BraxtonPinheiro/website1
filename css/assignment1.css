@@ -2,6 +2,7 @@
     box-sizing: border-box;
  }
 
+
  body {
     align-items: center;
     justify-content: center;
@@ -12,12 +13,14 @@
     font-family: Monospace;
     color: LightSlateGray;
     flex-direction: column;
+    transition: .5s ease-in-out;
  }
 
  .box {
     width: 100px;
     height: 50px;
     background-color: LightSlateGray;
+    transition: .5s ease-in-out;
  }
 
 .btn {
@@ -34,15 +37,17 @@
  .btn.active {
     transform: translateX(49px);
     background-color: DimGrey;
+    transition: .5s ease-in-out;
  }
 
  .box.active{
-    transition
+    transition: .5s ease-in-out;
     background-color: beige;
  }
 
  body.active{
     color: beige;
     background-color: Grey;
+    transition: .5s ease-in-out;
  }
 
