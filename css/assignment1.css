@@ -33,7 +33,6 @@
 
  .btn.active {
     transform: translateX(49px);
-    /*background-color: Beige;*/
  }
 
  .box.active{
@@ -42,6 +41,6 @@
 
  body.active{
     color: beige;
-    background-color: DimGrey;
+    background-color: Grey;
  }
 
