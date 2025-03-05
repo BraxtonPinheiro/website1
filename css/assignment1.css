@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+ }
+
+ body {
+    align-items: center;
+    justify-content: center;
+    background-color: Azure;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    font-family: Monospace;
+    color: LightSlateGray;
+    flex-direction: column;
+ }
+
+ .box {
+    width: 100px;
+    height: 50px;
+    background-color: LightSlateGray;
+ }
+
+.button {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: DimGrey;
+    cursor: pointer;
+}
+
+.button.dark-mode {
+    align-items: right;
+}
+
+
+
