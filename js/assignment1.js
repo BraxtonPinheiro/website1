@@ -1,5 +1,5 @@
 btn = document.querySelector('.btn')
 
 btn.addEventListener('click', ()=> {
-    box.
+    btn.classList.toggle('active')
 })

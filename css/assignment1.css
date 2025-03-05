@@ -30,7 +30,9 @@
     border: 0px;
 }
 
-
+ .btn .active {
+    transform: translateX(198px);
+ }
 
 
 
