@@ -40,7 +40,7 @@
     background-color: beige;
  }
 
- body.active {
+ body.active{
     color: beige;
     background-color: DimGrey;
  }
