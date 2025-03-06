@@ -37,12 +37,12 @@
 .dark {
     color: LightSlateGray;
     transition: .25s ease-in-out;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
 }
 
 .light {
     color: azure;
-    transition: .25s ease-in-out;
+    transition: .25s ease-in-out
 }
 
 .dark.active {
