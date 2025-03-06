@@ -36,23 +36,18 @@
 
 .dark {
     color: LightSlateGray;
-    transition: .25s ease-in-out;
-    margin-bottom: -20px;
 }
 
 .light {
     color: azure;
-    transition: .25s ease-in-out
 }
 
 .dark.active {
     color: Grey;
-    transition: .25s ease-in-out;
 }
 
 .light.active {
     color: beige;
-    transition: .25s ease-in-out;
 }
 
  .btn.active {
