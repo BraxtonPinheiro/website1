@@ -37,6 +37,7 @@
 .dark {
     color: LightSlateGray;
     transition: .25s ease-in-out;
+    margin-bottom: -40px;
 }
 
 .light {
