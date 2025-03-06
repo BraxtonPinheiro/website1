@@ -34,6 +34,26 @@
     transition: transform .5s ease-in-out;
 }
 
+.dark {
+    color: LightSlateGray;
+    transition: .25s ease-in-out;
+}
+
+.light {
+    color: azure;
+    transition: .25s ease-in-out;
+}
+
+.dark.active {
+    color: Grey;
+    transition: .25s ease-in-out;
+}
+
+.light.active {
+    color: beige;
+    transition: .25s ease-in-out;
+}
+
  .btn.active {
     transform: translateX(49px);
     background-color: DimGrey;
