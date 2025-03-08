@@ -1,3 +1,4 @@
+
 const element1 = document.getElementById('element1')
 const element2 = document.getElementById('element2')
 const element3 = document.getElementById('element3')
