@@ -11,6 +11,17 @@
     margin: 0;
  }
 
+
+.calculator {
+   position: relative;
+   height: 10vh;
+   width: 30vw;
+   background-color: grey;
+   color: black;
+   border-radius: 10px;
+}
+
+
 .btn1 {
    position: relative;
    top: -100px;
