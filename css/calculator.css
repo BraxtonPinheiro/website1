@@ -1,3 +1,4 @@
+ /*
  * {
     box-sizing: border-box;
  }
@@ -174,4 +175,79 @@
    padding-right: 10px; /* Padding on the right */
    margin-bottom: 20px; /* Space between display and buttons */
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+*/
+* {
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   background-color: LightGrey;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   flex-direction: column; /* Stack display and calculator vertically */
+}
+
+/* Style for the display area */
+.display {
+   width: 30vw; /* Width of the display */
+   height: 15vh; /* Height of the display */
+   background-color: #333; /* Dark background for display */
+   color: white; /* White text for contrast */
+   font-size: 3rem; /* Font size of the numbers */
+   border-radius: 10px; /* Rounded corners */
+   display: flex; /* Flexbox for text alignment */
+   justify-content: flex-end; /* Align text to the right (like a typical calculator display) */
+   align-items: center; /* Vertically center the text */
+   padding-right: 10px; /* Padding on the right */
+   margin-bottom: 20px; /* Space between display and buttons */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+/* Calculator grid layout */
+.calculator {
+   display: grid;
+   grid-template-columns: auto auto auto; /* 3 columns */
+   gap: 15px; /* Space between buttons */
+   width: 30vw;
+   height: 45vh; /* Set height of the calculator */
+}
+
+/* Style for each button */
+button {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+   font-size: 75px;
+   height: 15vh; /* Adjust the height of buttons */
+}
+
+button:active {
+   background-color: DarkGrey; /* Change color when clicked */
+}
+
+/* Special buttons for the calculator */
+.specialChar {
+   display: grid;
+   grid-template-columns: auto;
+   gap: 15px;
+   font-size: 75px;
+}
+
+/* Positioning C button */
+.btnC {
+   position: absolute;
+   height: 16.6vh;
+   width: 12.8vw;
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+   top: 730px;
+   left: 957.5px;
+   font-size: 75px;
 }
