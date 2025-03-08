@@ -160,3 +160,18 @@
    left: 957.5px;
    font-size: 75px;
  }
+
+ .display {
+   width: 30vw; /* Width of the display */
+   height: 15vh; /* Height of the display */
+   background-color: #333; /* Dark background for display */
+   color: white; /* White text for contrast */
+   font-size: 3rem; /* Font size of the numbers */
+   border-radius: 10px; /* Rounded corners */
+   display: flex; /* Use flexbox to align text */
+   justify-content: flex-end; /* Align text to the right (like a typical calculator display) */
+   align-items: center; /* Vertically center the text */
+   padding-right: 10px; /* Space on the right */
+   margin-bottom: 20px; /* Space between display and buttons */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
