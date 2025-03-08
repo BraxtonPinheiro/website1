@@ -17,7 +17,7 @@
    top: 20px;
    display: grid;
    grid-template-columns: auto auto auto;
-   height: 50vh;
+   height: 45vh;
    width: 30vw;
    gap: 15px;
 
@@ -168,10 +168,10 @@
    color: white; /* White text for contrast */
    font-size: 3rem; /* Font size of the numbers */
    border-radius: 10px; /* Rounded corners */
-   display: flex; /* Use flexbox to align text */
+   display: flex; /* Flexbox for text alignment */
    justify-content: flex-end; /* Align text to the right (like a typical calculator display) */
    align-items: center; /* Vertically center the text */
-   padding-right: 10px; /* Space on the right */
+   padding-right: 10px; /* Padding on the right */
    margin-bottom: 20px; /* Space between display and buttons */
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
 }
