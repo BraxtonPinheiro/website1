@@ -99,3 +99,38 @@
    color: black;
  }
 
+
+ .btnPlus {
+
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btnMinus {
+
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btnEqual {
+
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btnC {
+   position:absolute;
+   height: 16.6vh;
+   width: 16.6vw;
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+   top: 660px;
+ }
