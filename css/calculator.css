@@ -18,7 +18,7 @@
    display: grid;
    grid-template-columns: auto auto auto;
    height: 50vh;
-   width: 50vw;
+   width: 30vw;
    gap: 15px;
 
 }
@@ -37,10 +37,10 @@
    border: 0;
    color: black;
    position: absolute;
-   top: 660px;
+   top: 730px;
    height: 16.6vh;
-   width: 33.2vw;
-   left: 207px;
+   width: 25vw;
+   left: 522px;
  }
 
  .btn2 {
@@ -99,6 +99,16 @@
    color: black;
  }
 
+ .specialChar {
+   position: relative;
+   left: 17.5px;
+   top: 20px;
+   display: grid;
+   grid-template-columns: auto;
+   height: 50vh;
+   width: 7.5vw;
+   gap: 15px;
+ }
 
  .btnPlus {
 
@@ -127,10 +137,11 @@
  .btnC {
    position:absolute;
    height: 16.6vh;
-   width: 16.6vw;
+   width: 12.8vw;
    border-radius: 20px;
    background-color: Grey;
    border: 0;
    color: black;
-   top: 660px;
+   top: 720px;
+   left: 950px;
  }
