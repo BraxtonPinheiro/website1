@@ -14,20 +14,18 @@
 
 .calculator {
    position: relative;
-   height: 10vh;
-   width: 30vw;
-   background-color: grey;
-   color: black;
-   border-radius: 10px;
+   top: 20px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   height: 50vh;
+   width: 50vw;
+   gap: 15px;
+
 }
 
 
 .btn1 {
-   position: relative;
-   top: -100px;
    color: black;
-   height: 10vh;
-   width: 10vw;
    background-color: Grey;
    border: 0;
    border-radius: 15px;
@@ -35,10 +33,69 @@
 
  .btn0 {
    border-radius: 20px;
-   height: 10vh;
-   width: 20vw;
    background-color: Grey;
    border: 0;
-   position: relative;
-   top: 300px;
+   color: black;
+   position: absolute;
+   top: 660px;
+   height: 16.6vh;
+   width: 33.2vw;
+   left: 207px;
  }
+
+ .btn2 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn3 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn4 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn5 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn6 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn7 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn8 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
+ .btn9 {
+   border-radius: 20px;
+   background-color: Grey;
+   border: 0;
+   color: black;
+ }
+
