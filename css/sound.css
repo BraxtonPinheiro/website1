@@ -1,0 +1,29 @@
+ * {
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: LightGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+ }
+
+ .btn {
+    background-color: DarkGrey;
+    border: 0px;
+    border-radius: 7px;
+    position: relative;
+    margin: 10px; /*space inbetween buttons*/
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;
+ }
+
+.btn:hover {
+   opacity: 0.8;
+}
