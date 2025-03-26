@@ -57,7 +57,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: LightGrey;
-    z-index: -2;
+    z-index: -1;
 }
 
 .hero::before {
@@ -66,10 +66,13 @@ body {
     top: 0px;
     left: 0;
     width: 100%;
-    height: 100%    ;
+    height: 100%;
     background-color: black;
     opacity: 0.5;
+    z-index: -2;
 }
+
+
 
 .hero h1 {
     font-size: 46px;
@@ -82,7 +85,8 @@ body {
     letter-spacing: 1px;
 }
 
-.content h2, .content h3 {
+.content h2,
+.content h3 {
     font-size: 150%;
     margin: 20px 0;
 }
@@ -91,4 +95,22 @@ body {
     color: Grey;
     line-height: 30px;
     letter-spacing: 1.2px;
+}
+
+.nav.active {
+    background-color: white;
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
 }
