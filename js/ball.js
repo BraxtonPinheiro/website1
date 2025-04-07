@@ -1,6 +1,6 @@
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-cont LPadel = document.createElement('div')
+const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
