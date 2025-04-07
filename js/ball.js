@@ -5,9 +5,9 @@ document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
 let LPadelSpeed = 5
-let LPadelYPostion = windowHeight / 2 - LPadelHeight / 2
 const ballRadius = 35
 const windowHeight = window.innerHeight
+let LPadelYPostion = windowHeight / 2 - LPadelHeight / 2
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
