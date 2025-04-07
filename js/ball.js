@@ -52,7 +52,7 @@ function createLPadel(){
 }
 
 
-Document.addEventListener('keyup', (event) => {
+document.addEventListener('keyup', (event) => {
     if (event.key == 'w'){
         if (LPadelYPosition < 0) {
             LPadelYPosition = 0
