@@ -44,5 +44,6 @@ create LPadel() {
     LPadel.style.width = `${LPadelWidth}px`
     LPadel.style.backgroundColor = blue
     LPadel.style.position = 'absolute'
-    LPadel.style.left = "
+    LPadel.style.left = '50px'
+    LPadel.style.top = `${windowHeight / 2 - LPadelHeight / 2}px`
 }
