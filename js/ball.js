@@ -55,6 +55,13 @@ function createLPadel(){
 
 Document.addEventListener('keyup', (event) => {
     if (event.key == 'w'){
+        if (LPadelYPosition < 0) {
+            LPadelYPosition = 0
+        }
+        else {
+            LPadelYPosition = LPadelYPosition - LPadelSpeed
+        }
+
         LPadelYPosition = LPadelYPosition - LPadelSpeed
     }
     if (event.key == 's'){
