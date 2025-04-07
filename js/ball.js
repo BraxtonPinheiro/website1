@@ -38,3 +38,11 @@ function createBall(){
     ball.style.top = `${windowHeight/2 - ballRadius}px`
     ball.style.left = `${windowWidth/2 - ballRadius}px`
 }
+
+create LPadel() {
+    LPadel.style.height = `${LPadelHeight}px`
+    LPadel.style.width = `${LPadelWidth}px`
+    LPadel.style.backgroundColor = blue
+    LPadel.style.position = 'absolute'
+    LPadel.style.left = "
+}
