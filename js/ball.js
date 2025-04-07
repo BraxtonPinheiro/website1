@@ -49,4 +49,11 @@ create LPadel() {
 }
 
 
-LPadel.addEventListener('')
+Document.addEventListener('keyup', (event) => {
+    if (event.key == 'w'){
+        //move up
+    }
+    if (event.key == 's'){
+
+    }
+})
