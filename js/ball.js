@@ -4,7 +4,7 @@ const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
-let LPadelSpeed = 5
+let LPadelSpeed = 20
 const ballRadius = 35
 const windowHeight = window.innerHeight
 let LPadelYPostion = windowHeight / 2 - LPadelHeight / 2
@@ -46,7 +46,7 @@ createLPadel()
 function createLPadel(){
     LPadel.style.height = `${LPadelHeight}px`
     LPadel.style.width = `${LPadelWidth}px`
-    LPadel.style.backgroundColor = blue
+    LPadel.style.backgroundColor = 'red'
     LPadel.style.position = 'absolute'
     LPadel.style.left = '50px'
     LPadel.style.top = `${LPadelYPosition}px`
