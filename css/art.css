@@ -19,9 +19,6 @@ body {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 100px solid #a52a2a;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .walls {
