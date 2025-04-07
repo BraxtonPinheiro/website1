@@ -41,6 +41,8 @@ function createBall(){
     ball.style.left = `${windowWidth/2 - ballRadius}px`
 }
 
+createLPadel()
+
 function createLPadel(){
     LPadel.style.height = `${LPadelHeight}px`
     LPadel.style.width = `${LPadelWidth}px`
