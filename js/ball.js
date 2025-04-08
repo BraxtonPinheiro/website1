@@ -19,6 +19,9 @@ let ballXDirection = 1
 let score = 0 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
+const scoreBar = document.createElement('div')
+
+
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
