@@ -54,21 +54,21 @@ function createLPadel(){
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w'){
-        if (LPadelYPosition < 0) {
-            LPadelYPosition = 0
+        if (LPadelYPosition > 0) {
+            LPadelYPosition -= LPadelSpeed
         }
         else {
-            LPadelYPosition = LPadelYPosition - LPadelSpeed
+            LPadelYPosition = 0
         }
 
     }
     if (event.key == 's'){
 
-        if (LPadelYPosition >= windowHeight - LPadelHeight){
-           LPadelYPosition = windowHeight - LPadelHeight
+        if (LPadelYPosition < windowHeight - LPadelHeight) {
+            LPadelYPosition += LPadelSpeed
         }
         else {
-            LPadelYPosition = LPadelYPosition - LPadelSpeed
+            LPadelYPosition = windowHeight - LPadelHeight
         }
 
     }
