@@ -22,6 +22,12 @@ let score = 0 // display the score, increase the score by 1
 const scoreBar = document.createElement('div')
 
 
+function createScoreBar() {
+    scoreBar.style.position = 'absolute'
+    scoreBar.style.top = '50'
+    scoreBar.style.right = '20'
+    scoreBar.style.backgroundColor = 'black'
+}
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
