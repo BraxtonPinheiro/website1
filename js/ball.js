@@ -41,7 +41,8 @@ function moveBall(){
         (ballBottom >= LPadelTop) &&
         (ballTop <= LPadelBottom) &&
         (ballLeft <= LPadelRight) &&
-        (ballXDirection == -1){
+        (ballXDirection == -1)
+        {
             ballXDirection = ballXDirection * -1
         }
     )
@@ -89,3 +90,14 @@ document.addEventListener('keyup', (event) => {
         sKey = false
     }
 })
+
+
+function moveLPadel() {
+    if(wKey == true && LPadelYPosition > 0) {
+        LPadelYPosition - LPadelYPosition - LPadelSpeed
+    }
+    if(sKey ==true && LPadelYPosition < windowHeight - LPadelHeight) {
+        LPadelYPosition = LpadelYPosition + LPadelSpeed
+    }
+    LPaddel.style.top = `${LpadelYPosition}px`
+}
