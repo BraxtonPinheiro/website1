@@ -20,14 +20,16 @@ let score = 0 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
 const scoreBar = document.createElement('div')
+document.body.appendChild(scoreBar)
 
-
+createScoreBar()
 function createScoreBar() {
     scoreBar.style.position = 'absolute'
-    scoreBar.style.top = '50'
-    scoreBar.style.right = '20'
-    scoreBar.style.backgroundColor = 'black'
-}
+    scoreBar.style.top = '50px'
+    scoreBar.style.right = '20px'
+    scoreBar.style.Color = 'black'
+    scoreBar.style.fontSize = '15px'
+
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
