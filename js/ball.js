@@ -15,7 +15,11 @@ let ballYDirection = 1
 let ballSpeed = 5
 let ballXDirection = 1
 
-
+let score = 0 // display the score, increase the score by 1
+// every time the ball hits the paddle
+let level = 1 //display the level, increase the level by 1
+//every time the score increases by 10
+//as the levels increase, increase ball speed
 
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -43,10 +47,9 @@ function moveBall(){
         (ballTop <= LPadelBottom) &&
         (ballLeft <= LPadelRight) &&
         (ballXDirection == -1)
-        {
-            ballXDirection = ballXDirection * -1
-        }
     )
+    {ballXDirection = ballXDirection * -1}
+
 
 }
 
