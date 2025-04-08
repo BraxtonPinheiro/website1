@@ -14,7 +14,8 @@ let ballYPosition = windowHeight/2 - ballRadius
 let ballYDirection = 1
 let ballSpeed = 5
 let ballXDirection = 1
-setInterval(moveBall, 10)
+
+
 
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -101,3 +102,11 @@ function moveLPadel() {
     }
     LPaddel.style.top = `${LpadelYPosition}px`
 }
+
+function animate() {
+    moveBall()
+    moveLPadel()
+    requestAnimationFrame(animate)
+}
+
+animate()
