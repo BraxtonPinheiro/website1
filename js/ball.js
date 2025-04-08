@@ -1,20 +1,31 @@
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-const LPadel = document.createElement('div')
-document.body.appendChild(LPadel)
+const LPaddle = document.createElement('div')
+document.body.appendChild(LPaddle)
 
-let LPadelWidth = 20
-let LPadelHeight = 100
-let LPadelSpeed = 20
+let LPaddleWidth = 20
+let LPaddleHeight = 100
+let LPaddleSpeed = 20
 const ballRadius = 20
 const windowHeight = window.innerHeight
-let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
+let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 let ballSpeed = 5
 let ballXDirection = 1
+
+let score = 0 // display the score, increase the score by 1
+// every time the ball hits the paddle
+let level = 1 //display the level, increase the level by 1
+//every time the score increases by 10
+//as the levels increase, increase ball speed
+//if the ball gets passed the paddle, end the game.
+//make ball stop, or disappear and then let the user know
+//the game is over
+//optional: sound effects, background music
+
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
@@ -26,13 +37,13 @@ function createBall() {
     ball.style.left = `${windowWidth / 2 - ballRadius}px`
 }
 
-function createLPadel() {
-    LPadel.style.height = `${LPadelHeight}px`
-    LPadel.style.width = `${LPadelWidth}px`
-    LPadel.style.backgroundColor = 'red'
-    LPadel.style.position = 'absolute'
-    LPadel.style.left = '50px'
-    LPadel.style.top = `${LPadelYPosition}px`
+function createLPaddle() {
+    LPaddle.style.height = `${LPaddleHeight}px`
+    LPaddle.style.width = `${LPaddleWidth}px`
+    LPaddle.style.backgroundColor = 'red'
+    LPaddle.style.position = 'absolute'
+    LPaddle.style.left = '50px'
+    LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
 let wKey = false
@@ -68,40 +79,43 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-
     let ballTop = ballYPosition
     let ballBottom = ballYPosition + 2 * ballRadius
     let ballLeft = ballXPosition
-    let LPadelTop = LPadelYPosition
-    let LPadelBottom = LPadelYPosition + LPadelHeight
-    let LPadelRight = 50 + LPadelWidth
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = 50 + LPaddleWidth
 
     if (
-        (ballBottom >= LPadelTop) &&
-        (ballTop <= LPadelBottom) &&
-        (ballLeft <= LPadelRight) &&
+        (ballBottom >= LPaddleTop) &&
+        (ballTop <= LPaddleBottom) &&
+        (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
     ) {
         ballXDirection = ballXDirection * -1
     }
 }
 
-function moveLPadel() {
-    if (wKey == true && LPadelYPosition > 0) {
-        LPadelYPosition -= LPadelSpeed
+function moveLPaddle() {
+    if (wKey == true && LPaddleYPosition > 0) {
+        LPaddleYPosition -= LPaddleSpeed
     }
-    if (sKey == true && LPadelYPosition < windowHeight - LPadelHeight) {
-        LPadelYPosition += LPadelSpeed
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
+        LPaddleYPosition += LPaddleSpeed
     }
-    LPadel.style.top = `${LPadelYPosition}px`
+    LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
 function animate() {
     moveBall()
-    moveLPadel()
+    moveLPaddle()
     requestAnimationFrame(animate)
 }
 
 createBall()
-createLPadel()
+createLPaddle()
 animate()
+
+function score() {
+    
+}
