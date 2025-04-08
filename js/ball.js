@@ -23,7 +23,7 @@ const scoreBar = document.createElement('div')
 scoreBar.style.position = 'absolute'
 scoreBar.style.top = '50px'
 scoreBar.style.right = '20px'
-scoreBar.style.Color = 'black'
+scoreBar.style.color = 'black'
 scoreBar.style.fontSize = '15px'
 document.body.appendChild(scoreBar)
 
