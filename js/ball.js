@@ -15,15 +15,7 @@ let ballYDirection = 1
 let ballSpeed = 5
 let ballXDirection = 1
 
-let score = 0 // display the score, increase the score by 1
-// every time the ball hits the paddle
-let level = 1 //display the level, increase the level by 1
-//every time the score increases by 10
-//as the levels increase, increase ball speed
-//if the ball gets passed paddle, end the game.
-//make ball stop, or disapear and then let the user know
-//the game is over
-//optional: sound effects, background music
+
 
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
