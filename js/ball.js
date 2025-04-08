@@ -27,7 +27,6 @@ scoreBar.style.color = 'black';
 scoreBar.style.fontSize = '20px';
 document.body.appendChild(scoreBar);
 
-// Function to update score display
 function updateScore() {
     scoreBar.textContent = `Score: ${score}`;
 }
