@@ -5,7 +5,7 @@ document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
 let LPadelSpeed = 20
-const ballRadius = 35
+const ballRadius = 20
 const windowHeight = window.innerHeight
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 const windowWidth = window.innerWidth
@@ -29,6 +29,16 @@ function moveBall(){
     }
 
 }
+
+
+let ballTop = ballYPosition
+let ballBootom = ballYPosition + 2 * ballRadius
+let ballLeft = ballXPosition
+let LPadelTop = LPadelYPosition
+let LpadelBottom = LPadelYPosition + LPadelHeight
+let LPadelRight = LPadelXPosition + LPadelWidth
+
+
 
 createBall()
 function createBall(){
