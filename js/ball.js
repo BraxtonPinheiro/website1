@@ -19,14 +19,18 @@ let ballXDirection = 1
 let score = 0 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
-const scoreBar = document.createElement('div')
-scoreBar.style.position = 'absolute'
-scoreBar.style.top = '10px'
-scoreBar.style.right = '10px'
-scoreBar.style.color = 'black'
-scoreBar.style.height = '20px'
-scoreBar.style.width = '30px'
-document.body.appendChild(scoreBar)
+const scoreBar = document.createElement('div');
+scoreBar.style.position = 'absolute';
+scoreBar.style.top = '10px';
+scoreBar.style.right = '10px';
+scoreBar.style.color = 'black';
+scoreBar.style.fontSize = '20px';
+document.body.appendChild(scoreBar);
+
+// Function to update score display
+function updateScore() {
+    scoreBar.textContent = `Score: ${score}`;
+}
 
 
 function createBall() {
@@ -114,6 +118,7 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
+updateScore()
 createBall()
 createLPaddle()
 animate()
