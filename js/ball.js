@@ -1,13 +1,13 @@
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-const LPaddle = document.createElement('div')  // Corrected from LPadel to LPaddle
-document.body.appendChild(LPaddle)
-let LPaddleWidth = 20 // Corrected from LPadelWidth to LPaddleWidth
-let LPaddleHeight = 100 // Corrected from LPadelHeight to LPaddleHeight
-let LPaddleSpeed = 20 // Corrected from LPadelSpeed to LPaddleSpeed
+const LPadel = document.createElement('div')
+document.body.appendChild(LPadel)
+let LPadelWidth = 20
+let LPadelHeight = 100
+let LPadelSpeed = 20
 const ballRadius = 20
 const windowHeight = window.innerHeight
-let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2 // Corrected from LPadelYPosition to LPaddleYPosition
+let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
@@ -27,14 +27,26 @@ function moveBall(){
     if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1
     }
-}
 
-let ballTop = ballYPosition
-let ballBottom = ballYPosition + 2 * ballRadius
-let ballLeft = ballXPosition
-let LPaddleTop = LPaddleYPosition // Corrected from LPadelTop to LPaddleTop
-let LPaddleBottom = LPaddleYPosition + LPaddleHeight // Corrected from LPadelBottom to LPaddleBottom
-let LPaddleRight = LPaddleXPosition + LPaddleWidth // Corrected from LPadelRight to LPaddleRight
+
+    let ballTop = ballYPosition
+    let ballBootom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPadelTop = LPadelYPosition
+    let LpadelBottom = LPadelYPosition + LPadelHeight
+    let LPadelRight = LPadelXPosition + LPadelWidth
+
+
+    if(
+        (ballBottom >= LPadelTop) &&
+        (ballTop <= LPadelBottom) &&
+        (ballLeft <= LPadelRight) &&
+        (ballXDirection == -1){
+            ballXDirection = ballXDirection * -1
+        }
+    )
+
+}
 
 createBall()
 function createBall(){
@@ -47,33 +59,33 @@ function createBall(){
     ball.style.left = `${windowWidth/2 - ballRadius}px`
 }
 
-createLPaddle() // Corrected from createLPadel to createLPaddle
-function createLPaddle(){
-    LPaddle.style.height = `${LPaddleHeight}px` // Corrected from LPadelHeight to LPaddleHeight
-    LPaddle.style.width = `${LPaddleWidth}px` // Corrected from LPadelWidth to LPaddleWidth
-    LPaddle.style.backgroundColor = 'red'
-    LPaddle.style.position = 'absolute'
-    LPaddle.style.left = '50px'
-    LPaddle.style.top = `${LPaddleYPosition}px` // Corrected from LPadelYPosition to LPaddleYPosition
+createLPadel()
+function createLPadel(){
+    LPadel.style.height = `${LPadelHeight}px`
+    LPadel.style.width = `${LPadelWidth}px`
+    LPadel.style.backgroundColor = 'red'
+    LPadel.style.position = 'absolute'
+    LPadel.style.left = '50px'
+    LPadel.style.top = `${LPadelYPosition}px`
 }
 
-document.addEventListener('keyup', (event) => {
-    if (event.key == 'w'){
-        if (LPaddleYPosition > 0) { // Corrected from LPadelYPosition to LPaddleYPosition
-            LPaddleYPosition -= LPaddleSpeed // Corrected from LPadelSpeed to LPaddleSpeed
-        }
-        else {
-            LPaddleYPosition = 0 // Corrected from LPadelYPosition to LPaddleYPosition
-        }
 
+wKey = false
+sKey = false
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'w'){
+        wKey = true
     }
     if (event.key == 's'){
-        if (LPaddleYPosition < windowHeight - LPaddleHeight) { // Corrected from LPadelYPosition to LPaddleYPosition
-            LPaddleYPosition += LPaddleSpeed // Corrected from LPadelSpeed to LPaddleSpeed
-        }
-        else {
-            LPaddleYPosition = windowHeight - LPaddleHeight // Corrected from LPadelYPosition to LPaddleYPosition
-        }
+        sKey = true
     }
-    LPaddle.style.top = `${LPaddleYPosition}px` // Corrected from LPadelYPosition to LPaddleYPosition
+})
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w'){
+        wKey = false
+    }
+    if (event.key == 's'){
+        sKey = false
+    }
 })
