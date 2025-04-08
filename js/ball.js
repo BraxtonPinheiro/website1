@@ -31,7 +31,7 @@ function createLPadel() {
     LPadel.style.width = `${LPadelWidth}px`
     LPadel.style.backgroundColor = 'red'
     LPadel.style.position = 'absolute'
-    LPadel.style.left = '50px' // Fixed X position
+    LPadel.style.left = '50px'
     LPadel.style.top = `${LPadelYPosition}px`
 }
 
@@ -68,13 +68,13 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    // Ball-paddle collision detection
+
     let ballTop = ballYPosition
     let ballBottom = ballYPosition + 2 * ballRadius
     let ballLeft = ballXPosition
     let LPadelTop = LPadelYPosition
     let LPadelBottom = LPadelYPosition + LPadelHeight
-    let LPadelRight = 50 + LPadelWidth // Fixed paddle's X position
+    let LPadelRight = 50 + LPadelWidth
 
     if (
         (ballBottom >= LPadelTop) &&
@@ -82,13 +82,13 @@ function moveBall() {
         (ballLeft <= LPadelRight) &&
         (ballXDirection == -1)
     ) {
-        ballXDirection = ballXDirection * -1 // Ball hits the left paddle and bounces back
+        ballXDirection = ballXDirection * -1
     }
 }
 
 function moveLPadel() {
     if (wKey == true && LPadelYPosition > 0) {
-        LPadelYPosition -= LPadelSpeed // Corrected -= operator for up movement
+        LPadelYPosition -= LPadelSpeed
     }
     if (sKey == true && LPadelYPosition < windowHeight - LPadelHeight) {
         LPadelYPosition += LPadelSpeed
