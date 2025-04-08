@@ -21,10 +21,11 @@ let score = 0 // display the score, increase the score by 1
 
 const scoreBar = document.createElement('div')
 scoreBar.style.position = 'absolute'
-scoreBar.style.top = '50px'
-scoreBar.style.right = '20px'
+scoreBar.style.top = '10px'
+scoreBar.style.right = '10px'
 scoreBar.style.color = 'black'
-scoreBar.style.fontSize = '15px'
+scoreBar.style.height = '20px'
+scoreBar.style.width = '30px'
 document.body.appendChild(scoreBar)
 
 
