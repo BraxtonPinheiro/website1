@@ -16,7 +16,7 @@ let ballYDirection = 1
 let ballSpeed = 5
 let ballXDirection = 1
 
-let score = 9 // display the score, increase the score by 1
+let score = 0 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
 
