@@ -3,9 +3,9 @@ document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 
-let LPaddleWidth = 20
-let LPaddleHeight = 100
-let LPaddleSpeed = 20
+let LPaddleWidth = 10
+let LPaddleHeight = 125
+let LPaddleSpeed = 15
 const ballRadius = 20
 const windowHeight = window.innerHeight
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
@@ -19,18 +19,26 @@ let ballXDirection = 1
 let score = 0 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
-const scoreBar = document.createElement('div');
-scoreBar.style.position = 'absolute';
-scoreBar.style.top = '10px';
-scoreBar.style.right = '10px';
-scoreBar.style.color = 'black';
-scoreBar.style.fontSize = '20px';
-document.body.appendChild(scoreBar);
+const scoreboard = document.createElement('div')
+document.body.appendChild(scoreboard)
 
-function updateScore() {
-    scoreBar.textContent = `Score: ${score}`;
+function createSLboard() {
+    scoreboard.style.height = '80px'
+    scoreboard.style.width = '100%'
+    scoreboard.style.opacity = '.5'
+    scoreboard.style.backgroundColor = 'beige'
+    scoreboard.style.position = 'absolute'
+    scoreboard.style.right = '0px'
+    scoreboard.style.top = '0px'
 }
 
+function addScore() {
+
+}
+
+displayScore()
+function displayScore() {
+}
 
 function createBall() {
     ball.style.height = `${2 * ballRadius}px`
@@ -49,6 +57,7 @@ function createLPaddle() {
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = '50px'
     LPaddle.style.top = `${LPaddleYPosition}px`
+    LPaddle.style.borderRadius = '15px'
 }
 
 let wKey = false
@@ -117,7 +126,7 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-updateScore()
+createSLboard()
 createBall()
 createLPaddle()
 animate()
