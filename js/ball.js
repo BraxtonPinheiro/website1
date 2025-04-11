@@ -19,6 +19,8 @@ let ballXDirection = 1
 let score = 9 // display the score, increase the score by 1
 // every time the ball hits the paddle
 
+
+
 const scoreboard = document.createElement('div')
 document.body.appendChild(scoreboard)
 
@@ -147,18 +149,18 @@ function moveBall() {
         addScore()
     }
 
-    if (score == 11){
-        ballSpeed = ballSpeed + 10
-        addLevels()
-    }
-    if (score == 21){
-        ballSpeed = ballSpeed + 15
-        addLevels()
-    }
-    if (score == 31){
-        ballSpeed = ballSpeed + 20
-        addLevels()
-    }
+    // if (score == 11){
+    //     ballSpeed = ballSpeed + 10
+    //     addLevels()
+    // }
+    // if (score == 21){
+    //     ballSpeed = ballSpeed + 15
+    //     addLevels()
+    // }
+    // if (score == 31){
+    //     ballSpeed = ballSpeed + 20
+    //     addLevels()
+    // }
 }
 
 function moveLPaddle() {
