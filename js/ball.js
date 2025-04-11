@@ -38,6 +38,7 @@ function createSLboard() {
 
 function addScore() {
     score++
+    console.log('Score increased to:', score)
     displayScore()
 }
 
