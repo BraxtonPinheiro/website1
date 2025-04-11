@@ -41,10 +41,11 @@ function addScore() {
     displayScore()
 }
 
+createSLboard()
 displayScore()
 function displayScore() {
     scoreboard.style.textColor = 'black'
-    scoreboard.innerHTML = `Score: ${score}`
+    scoreboard.innerText = `Score: ${score}`
     scoreboard.style.fontSize = '30px'
 }
 
@@ -121,8 +122,7 @@ function moveBall() {
         (ballBottom >= LPaddleTop) &&
         (ballTop <= LPaddleBottom) &&
         (ballLeft <= LPaddleRight) &&
-        (ballXDirection == -1)
-    ) {
+        (ballXDirection == -1)){
         ballXDirection = ballXDirection * -1
         addScore()
     }
@@ -144,7 +144,6 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-createSLboard()
 createBall()
 createLPaddle()
 animate()
