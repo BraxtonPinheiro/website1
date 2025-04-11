@@ -21,7 +21,12 @@ let score = 9 // display the score, increase the score by 1
 
 
 
-                    // Hey Mr. Maresh 
+                    // Hey Mr. Maresh this levels thing isnt really working for me.
+                    // when the score would hit 11 the score would start increasing
+                    // at a rate of about 20 points/sec.
+                    // JavaScript really isnt my thing so try not to laugh when you
+                    // read this code on my attempts to complete this assignment.
+                    //have a great spring break!
 
 
 
