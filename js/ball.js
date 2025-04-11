@@ -38,7 +38,7 @@ function levelB() {
 }
 
 function addLevels(){
-    levels++
+    levels = levels + 1
     displayLevels()
 }
 
@@ -65,7 +65,7 @@ function createSLboard(){
 }
 
 function addScore(){
-    score++
+    score = score + 1
     displayScore()
 }
 
