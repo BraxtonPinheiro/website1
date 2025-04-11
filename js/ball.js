@@ -30,6 +30,10 @@ function createSLboard() {
     scoreboard.style.position = 'absolute'
     scoreboard.style.right = '0px'
     scoreboard.style.top = '0px'
+    scoreboard.style.display = 'flex'            // NEW
+    scoreboard.style.justifyContent = 'flex-end' // NEW
+    scoreboard.style.alignItems = 'center'       // Optional for vertical center
+    scoreboard.style.paddingRight = '40px'
 }
 
 function addScore() {
@@ -41,7 +45,6 @@ displayScore()
 function displayScore() {
     scoreboard.innerHTML = `Score: ${score}`
     scoreboard.style.fontSize = '30px'
-    scoreboard.style.right = '0px'
     scoreboard.style.lineHeight = '80px'
 }
 
