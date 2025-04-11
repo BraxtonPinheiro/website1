@@ -21,6 +21,11 @@ let score = 9 // display the score, increase the score by 1
 
 
 
+                    // Hey Mr. Maresh 
+
+
+
+
 const scoreboard = document.createElement('div')
 document.body.appendChild(scoreboard)
 
