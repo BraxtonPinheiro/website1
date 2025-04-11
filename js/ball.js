@@ -27,6 +27,15 @@ document.body.appendChild(level)
 
 levels = 1
 
+function levelB() {
+    level.style.position = 'absolute'
+    level.style.left = '0px'
+    level.style.top = '0px'
+    level.style.display = 'flex'
+    level.style.justifyContent = 'left'
+    level.style.alignItems = 'center'
+    level.style.paddingLeft = '40px'
+}
 
 function addLevels(){
     levels++
@@ -39,8 +48,8 @@ function displayLevels(){
 }
 
 
-
-
+levelB()
+displayLevels()
 function createSLboard(){
     scoreboard.style.height = '80px'
     scoreboard.style.width = '100%'
@@ -144,6 +153,16 @@ function moveBall() {
         (ballXDirection == 1)){
         ballXDirection = ballXDirection * 1
         addScore()
+    }
+
+    if (score == 11){
+        ballSpeed + 10
+    }
+    if (score == 21){
+        ballSpeed + 15
+    }
+    if (score == 31){
+        ballSpeed + 20
     }
 }
 
