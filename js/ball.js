@@ -39,7 +39,7 @@ function addScore() {
 
 displayScore()
 function displayScore() {
-    scoreboard.innerText = `Score: ${score}`
+    scoreboard.innerHTML = `Score: ${score}`
     scoreboard.style.fontSize = '30px'
     scoreboard.style.right = '0px'
     scoreboard.style.lineHeight = '80px'
