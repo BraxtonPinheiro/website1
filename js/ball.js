@@ -26,11 +26,14 @@ function createSLboard() {
     scoreboard.style.height = '80px'
     scoreboard.style.width = '100%'
     scoreboard.style.opacity = '.5'
-    scoreboard.style.backgroundColor = 'beige'
+    scoreboard.style.backgroundColor = 'grey'
     scoreboard.style.position = 'absolute'
     scoreboard.style.right = '0px'
     scoreboard.style.top = '0px'
-
+    scoreboard.style.display = 'flex'            // NEW
+    scoreboard.style.justifyContent = 'right' // NEW
+    scoreboard.style.alignItems = 'center'       // Optional for vertical center
+    scoreboard.style.paddingRight = '40px'
 }
 
 function addScore() {
@@ -40,6 +43,7 @@ function addScore() {
 
 displayScore()
 function displayScore() {
+    scoreboard.style.textColor = 'black'
     scoreboard.innerHTML = `Score: ${score}`
     scoreboard.style.fontSize = '30px'
 }
