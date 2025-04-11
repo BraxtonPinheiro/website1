@@ -33,11 +33,13 @@ function createSLboard() {
 }
 
 function addScore() {
-
+    score++
+    displayScore()
 }
 
 displayScore()
 function displayScore() {
+    
 }
 
 function createBall() {
