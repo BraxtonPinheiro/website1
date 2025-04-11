@@ -56,16 +56,6 @@ function createBall() {
     ball.style.position = 'absolute'
     ball.style.top = `${windowHeight / 2 - ballRadius}px`
     ball.style.left = `${windowWidth / 2 - ballRadius}px`
-
-    if (
-        (ballBottom >= LPaddleTop) &&
-        (ballTop <= LPaddleBottom) &&
-        (ballLeft <= LPaddleRight) &&
-        (ballXDirection == -1)
-    ) {
-        ballXDirection = ballXDirection * -1
-        addScore()
-    }
 }
 
 function createLPaddle() {
@@ -125,6 +115,16 @@ function moveBall() {
         (ballXDirection == -1)
     ) {
         ballXDirection = ballXDirection * -1
+    }
+
+    if (
+        (ballBottom >= LPaddleTop) &&
+        (ballTop <= LPaddleBottom) &&
+        (ballLeft <= LPaddleRight) &&
+        (ballXDirection == -1)
+    ) {
+        ballXDirection = ballXDirection * -1
+        addScore()
     }
 }
 
