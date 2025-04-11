@@ -22,7 +22,26 @@ let score = 0 // display the score, increase the score by 1
 const scoreboard = document.createElement('div')
 document.body.appendChild(scoreboard)
 
-function createSLboard() {
+const level = document.createElement('div')
+document.body.appendChild(level)
+
+levels = 1
+
+
+function addLevels(){
+    levels++
+    displayLevels()
+}
+
+function displayLevels(){
+    scoreboard.innerText = `Level: ${levels}`
+    scoreboard.style.fontSize = '30px'
+}
+
+
+
+
+function createSLboard(){
     scoreboard.style.height = '80px'
     scoreboard.style.width = '100%'
     scoreboard.style.opacity = '.5'
@@ -36,9 +55,8 @@ function createSLboard() {
     scoreboard.style.paddingRight = '40px'
 }
 
-function addScore() {
+function addScore(){
     score++
-    console.log('Score increased to:', score)
     displayScore()
 }
 
