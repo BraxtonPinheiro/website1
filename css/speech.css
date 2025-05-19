@@ -104,3 +104,13 @@ main {
     overflow: hidden;
     transition: box-shadow 0.2s ease-out;
 }
+
+.box.active {
+    box-shadow: 0 0 10px 5px darkSalmon;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
