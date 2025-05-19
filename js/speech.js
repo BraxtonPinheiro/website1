@@ -79,7 +79,7 @@ closeBtn.addEventListener('click', ()=>{
     document.getElementById('text-box').classList.remove('show')
 })
 
-let voices= []
+let voices = []
 
 function getVoices() {
     voices = speechSynthesis.getVoices()
