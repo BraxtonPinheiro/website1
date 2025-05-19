@@ -93,3 +93,8 @@ function getVoices() {
         voicesSelect.appendChild(option)
     })
 }
+
+//voices changed
+speechSynthesis.addEventListener('voiceschanged', getVoices)
+
+getVoices()
