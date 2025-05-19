@@ -38,3 +38,9 @@ h1{
 .btn:focus, select:focus{
     outline: 0;
 }
+
+.btn-toggle {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
