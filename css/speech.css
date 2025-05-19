@@ -29,5 +29,12 @@ h1{
     color: white;
     font-size: 16px;
     padding: 8px;
-    transform: 
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus, select:focus{
+    outline: 0;
 }
