@@ -79,6 +79,16 @@ function createBox(item) {
 //initialize speech synthesis
 const message = new SpeechSynthesisUtterance()
 
+//set text
+function setTextMessage(text) {
+    message.text= text
+}
+
+
+//speak text
+function speakText() {
+    speechSynthesis.speak(message)
+}
 
 
 //toggle text box
