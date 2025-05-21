@@ -138,3 +138,9 @@ function setVoice(e) {
 
 
 getVoices()
+
+//read text button
+readBtn,addEventListener('click', ()=> {
+    setTextMessage(textArea.value)
+    speakText()
+})
