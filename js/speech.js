@@ -126,7 +126,7 @@ voicesSelect.addEventListener('change', setVoice)
 
 //set voice function
 function setVoice(e) {
-    message.voice = voices.find
+    message.voice = voices.find(voice => voice.name == e.target.value)
 }
 
 
