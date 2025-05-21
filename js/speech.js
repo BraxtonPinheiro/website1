@@ -119,4 +119,15 @@ function getVoices() {
 //voices changed
 speechSynthesis.addEventListener('voiceschanged', getVoices)
 
+
+//change voice
+voicesSelect.addEventListener('change', setVoice)
+
+
+//set voice function
+function setVoice(e) {
+
+}
+
+
 getVoices()
