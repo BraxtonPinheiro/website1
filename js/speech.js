@@ -93,7 +93,7 @@ function getVoices() {
     voices.forEach(voice =>{
         const option = document.createElement('option')
 
-        option value = voice.name
+        optionValue= voice.name
         option.innerText = `${voice.name} ${voice.lang}`
 
         voicesSelect.appendChild(option)
