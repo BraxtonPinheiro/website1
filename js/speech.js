@@ -67,7 +67,7 @@ function createBox(item) {
     `
 
     box.addEventListener('click', ()=> {
-        setTextMessage(text)
+        setTextMessage(item.text)
         speakText()
     })
 
