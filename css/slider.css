@@ -26,5 +26,10 @@ body {
     top: 0px;
     left: 0px;
     transition: transform .5s ease-in-out;
+}
+
+.left-side > div {
+    height: 100%;
+    width: 100%;
     
 }
