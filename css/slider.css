@@ -64,3 +64,9 @@ body {
     height: 100%;
     width: 100%;
 }
+
+button {
+    background-color: white;
+    border: 0;
+    color: #aaa;
+}
