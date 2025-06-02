@@ -110,17 +110,23 @@ closeBtn.addEventListener('click', ()=>{
 
 let voices = []
 
+
+
 function getVoices() {
-    voices = speechSynthesis.getVoices()
+    voices = speechSynthesis.getVoices();
+    voicesSelect.innerHTML = '';
 
-    voices.forEach(voice =>{
-        const option = document.createElement('option')
+    voices.forEach(voice => {
+        const option = document.createElement('option');
+        option.value = voice.name;
+        option.innerText = `${voice.name} (${voice.lang})`;
+        voicesSelect.appendChild(option);
+    });
 
-        optionValue= voice.name
-        option.innerText = `${voice.name} ${voice.lang}`
-
-        voicesSelect.appendChild(option)
-    })
+    if (voices.length > 0) {
+        message.voice = voices[0];
+        voicesSelect.value = voices[0].name;
+    }
 }
 
 //voices changed
@@ -140,7 +146,7 @@ function setVoice(e) {
 getVoices()
 
 //read text button
-readBtn,addEventListener('click', ()=> {
+readBtn.addEventListener('click', ()=> {
     setTextMessage(textarea.value)
     speakText()
 })

@@ -25,7 +25,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    transition: transform .5s ease-in-out;
+    transition: top .5s ease-in-out;
 }
 
 .left-side > div {
@@ -54,7 +54,7 @@ body {
     top: 0;
     left: 35%;
     width: 65%;
-    transition: transform .5s ease-in-out;
+    transition: top .5s ease-in-out;
 }
 
 .right-side > div {
@@ -82,20 +82,20 @@ button:focus {
     outline: none;
 }
 
-.slider-container .action-buttons button {
+.slider-container .action-button button {
     position: absolute;
     left: 35%;
     top: 50%;
     z-index: 100;
 }
 
-.slider-container .action-buttons .down-button {
+.slider-container .action-button .down-button {
     transform: translate(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.slider-container: .action-buttons .up-button {
+.slider-container .action-button .up-button {
     transform: translateY(-100%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
